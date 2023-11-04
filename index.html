@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomPetals</title>
+
+    <!-- Intégration de la police Pacifico et Papyrus depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet">
+
+    <style>
+        /* Styles de base pour l'en-tête */
+        body {
+            margin: 0;
+            font-family: 'Pacifico', sans-serif;
+        }
+
+        header {
+            background-color: #006400; /* Vert sapin pour l'en-tête */
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f4f4f4;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Styles pour le titre et les résumés */
+        h1 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            font-family: 'Papyrus', sans-serif;
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.5; 
+        }
+
+        /* Styles pour la galerie de photos */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap; /* Permet aux photos de se replier sur une nouvelle ligne si nécessaire */
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            width: 200px;
+            height: 145px;
+            margin-right: 15px;
+            margin-bottom: 15px; /* Espacement entre les lignes de photos */
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .photo {
+                width: calc(50% - 15px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px; /* Réduction de la taille du titre */
+            }
+
+            p {
+                font-size: 14px; /* Réduction de la taille du texte */
+            }
+
+            .photo {
+                width: calc(100% - 15px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Pdf/Infos Bloompetals.pdf" target="_blank">Entreprise</a>
+            <a href="realisation.html">Réalisation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <h1>BloomPetals</h1>
+        <p>
+            BloomPetals n'est pas simplement une entreprise de fleurs : c'est une expérience. Chaque bouquet est conçu avec passion, créativité et une touche personnelle qui le rend unique. Nous croyons que les fleurs ont le pouvoir de transformer les moments ordinaires en souvenirs inoubliables. Que ce soit pour célébrer, consoler, exprimer de l'amour ou simplement embellir, BloomPetals est là pour rendre chaque événement spécial avec la magie des fleurs. Rejoignez-nous dans ce voyage floral et laissez-nous apporter une touche d'éclat à vos moments précieux.
+        </p>
+
+        <!-- Première galerie de photos -->
+        <div class="photo-gallery">
+            <img src="images/image1.png" alt="Photo 1" class="photo">
+            <img src="images/image2.png" alt="Photo 2" class="photo">
+            <img src="images/image3.png" alt="Photo 3" class="photo">
+            <img src="images/image4.png" alt="Photo 4" class="photo">
+        </div>
+
+        <!-- Texte sur le service de livraison -->
+        <p>
+            Chez BloomPetals, nous ne livrons pas seulement des bouquets ; nous livrons des expériences. Notre service de livraison à domicile garantit que vos fleurs arrivent fraîches et à temps, où que vous soyez. Mais ce qui nous distingue vraiment, c'est notre option unique d'ajouter un happening lors de la livraison. Imaginez la surprise de votre proche lorsqu'en plus de recevoir un bouquet magnifique, un musicien joue leur chanson préférée, ou un poète récite un poème dédié. Avec BloomPetals, chaque livraison se transforme en un souvenir inoubliable. Parce que pour nous, chaque moment compte et mérite d'être célébré.
+        </p>
+
+        <!-- Seconde galerie de photos -->
+        <div class="photo-gallery">
+            <img src="images/image5.png" alt="Photo 5" class="photo">
+            <img src="images/image6.png" alt="Photo 6" class="photo">
+            <img src="images/image7.png" alt="Photo 7" class="photo">
+            <img src="images/image8.png" alt="Photo 8" class="photo">
+        </div>
+    </main>
+
+    <!-- Pied de page (si nécessaire) -->
+    <footer>
+        <!-- Ici, vous pouvez ajouter un pied de page si vous le souhaitez -->
+    </footer>
+
+</body>
+
+</html>

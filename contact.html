@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez BloomPetals</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2eae1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #f0dbd8;
+            padding: 20px;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            margin: 0;
+        }
+        section {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: #f0dbd8;
+            border: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #e3bfb2;
+        }
+        p.lead {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BloomPetals</h1>
+        <p>Donnez vie à vos moments précieux avec nos créations florales</p>
+    </header>
+
+    <section>
+        <p class="lead">Nous serions ravis d'entendre vos souhaits et de vous guider dans la réalisation de vos rêves floraux. Remplissez le formulaire ci-dessous et nous vous contacterons sous peu !</p>
+        
+        <form action="/submit_contact" method="post">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite" required>
+                <option value="Mr">Monsieur</option>
+                <option value="Mme">Madame</option>
+                <option value="Mlle">Mademoiselle</option>
+            </select>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="adresse">Adresse postale :</label>
+            <textarea id="adresse" name="adresse" rows="3" required></textarea>
+
+            <label for="confidentialite">
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                J'accepte les politiques de confidentialité de l’entreprise.
+            </label>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+</body>
+</html>
